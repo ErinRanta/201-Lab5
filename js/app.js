@@ -27,9 +27,9 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function testmMultiply(a,b) { //eslint-disable-line
+function multiply(a,b) { //eslint-disable-line
 
-}let resultMultiply = (multiply4*5)
+}
 
 // Here is the test for multiply(); uncomment it to run it
 
@@ -50,7 +50,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 
-}
+} 
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
