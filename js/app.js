@@ -38,10 +38,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code heree
 function multiply(a,b) {//eslint-disable-line
-  let returnMul = a * b;
-  let concatstring = 'The product of ${a} and ${b} is ${returnMul}.';
-  let returnArray = [returnMul, string];
-  return returnArray;
+  let number = a * b;
+   return[number, 'The product of ' + a + ' and ' + b + ' is ' + number + '.'];
 }
 
 // Here is the test for multiply(); uncomment it to run it
