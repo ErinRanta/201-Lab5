@@ -3,23 +3,22 @@
 /* Problem 1 (this is your demo that we'll solve in class)
 Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element is the sum of those numbers, and the second element is a concatenated string that EXACTLY follows this example and uses the values that were input into the function:
 
-"The sum of 4 and 7 is 11."
+"The sum of 4 and 7 is 11." r
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
-// Write your code here 
- function sum(a, b) { //eslint-disable-line
-  let number = a + b;
+// Write your code here
 
-  return [number, 'The sum of ' + a + ' and ' + b + ' is ' + number + '.']; 
-}
- 
-
-
+function sum(a, b) { //eslint-disable-line
+    let number = a + b;
+  
+    return [number, 'The sum of ' + a + ' and ' + b + ' is ' + number + '.'];
+  }
 
 
-// // Here is the test for sum(); uncomment it to run it
-testSum(4, 7);
+
+// Here is the test for sum(); uncomment it to run it
+// testSum(4, 7); 
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -31,10 +30,10 @@ Write a function called multiply() that takes in two numbers as arguments and re
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
-// Write your code here
+// Write your code heree
 function multiply(a,b) {//eslint-disable-line
   let number = a * b;
-  return[number, 'The product of ' + a + ' and ' + b + ' is ' + number + '.'];
+   return[number, 'The product of ' + a + ' and ' + b + ' is ' + number + '.'];
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -80,16 +79,29 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
-  let firstEl = sum(sum(sumArr[0], sumArr[1])[0], sumArr[2]);
-  let secondEl = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${firstEl[0]} is their sum.`;
-  let returnArray = [firstEl[0], secondEl];
-  return returnArray;
+
+// function sumArray(sumArr) { //eslint-disable-line
+// let firstEl = sum(sum(sumArr[0], sumArr[1])[0], sumArr[2]);
+// let secondEl = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${firstEl[0]} is their sum.`;
+// let returnArray = [firstEl[0], secondEl];
+// return returnArray;
 
 }
 // Here is the test for sumArray(); uncomment it to run it
 
+// testSumArray(testArray); 
+=======
+function sumArray(sumArr) { //eslint-disable-line
+let firstEl = sum(sum(sumArr[0], sumArr[1])[0], sumArr[2]);
+let secondEl = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${firstEl[0]} is their sum.`;
+let returnArray = [firstEl[0], secondEl];
+return returnArray;
+
+}
+Here is the test for sumArray(); uncomment it to run it
+
 testSumArray(testArray); 
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -112,7 +124,11 @@ function multiplyArray(multArr) { //eslint-disable-line
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
+multiplyarray
 testMultiplyArray(testArray);
+
+// testMultiplyArray(testArray);  
+main
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -137,7 +153,7 @@ let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
-}
+} 
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
