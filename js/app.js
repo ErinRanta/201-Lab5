@@ -15,12 +15,6 @@ function sum(a, b) { //eslint-disable-line
     return [number, 'The sum of ' + a + ' and ' + b + ' is ' + number + '.'];
   }
 
-// function sum(4, 7) { //eslint-disable-line
-
-// return[11];
- 
-
-
 
 
 // Here is the test for sum(); uncomment it to run it
@@ -60,15 +54,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
-} 
+  let sumResult = sum(sum(a, b)[0], c)[0];
+  let multResult = multiply(multiply(a, b)[0], c)[0];
+  let returnArray = [sumResult, multResult, `${a} and ${b} and ${c} sum to ${sumResult}.`, `The product of ${a} and ${b} and ${c} is {multResult}.`];
+  return returnArray; 
+}
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5); 
 
+// 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
-/////////////////////////////////////
+
 /* Problem 4
 Write a function called sumArray() that takes in an array of numbers as its single argument and then returns an array where the first element is the sum of the numbers in the array, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
@@ -88,7 +86,7 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 // let returnArray = [firstEl[0], secondEl];
 // return returnArray;
 
-// }
+}
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray); 
@@ -155,7 +153,7 @@ let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
-} r
+} 
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
